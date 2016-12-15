@@ -25,7 +25,7 @@ public class CarTest
   @Test
   public void luxury() throws Exception
   {
-    Car car = new Car("", LUXURY);
+    Car car = new Car("BMW", LUXURY);
     assertThat(car.amount(5), is(75));
   }
 }
