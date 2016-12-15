@@ -15,7 +15,7 @@ public class Car
     this.type = type;
   }
 
-  public int amount(int daysRented)
+  public int amountForDays(int daysRented)
   {
     int thisAmount = 0;
     switch(type)

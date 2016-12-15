@@ -12,20 +12,20 @@ public class CarTest
   public void mini() throws Exception
   {
     Car car = new Car("Hyundai i10", MINI);
-    assertThat(car.amount(5), is(20));
+    assertThat(car.amountForDays(5), is(20));
   }
 
   @Test
   public void economy() throws Exception
   {
     Car car = new Car("Ford Fiesta", ECONOMY);
-    assertThat(car.amount(5), is(35));
+    assertThat(car.amountForDays(5), is(35));
   }
 
   @Test
   public void luxury() throws Exception
   {
     Car car = new Car("BMW", LUXURY);
-    assertThat(car.amount(5), is(75));
+    assertThat(car.amountForDays(5), is(75));
   }
 }
