@@ -16,6 +16,13 @@ public class CarTest
   }
 
   @Test
+  public void mini_longRental() throws Exception
+  {
+    Car car = new Car("Hyundai i10", MINI);
+    assertThat(car.amountForDays(15), is(35));
+  }
+
+  @Test
   public void economy() throws Exception
   {
     Car car = new Car("Ford Fiesta", ECONOMY);

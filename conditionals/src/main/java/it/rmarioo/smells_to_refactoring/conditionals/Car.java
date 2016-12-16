@@ -21,7 +21,10 @@ public class Car
     switch(type)
     {
       case MINI:
-        thisAmount = 10 + (daysRented * 2);
+        if (daysRented < 10)
+          thisAmount = 10 + (daysRented * 2);
+        else
+          thisAmount = 20 + (daysRented * 1);
         break;
       case ECONOMY:
         thisAmount = 20 + (daysRented * 3);
