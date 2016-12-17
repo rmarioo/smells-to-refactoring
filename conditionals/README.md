@@ -13,4 +13,4 @@ The refactoring applied is ***Replacing conditionals with polimorfism*** and it 
 [conditionals-refactored]: <https://github.com/rmarioo/smells-to-refactoring/tree/conditional_refactored/conditionals>
 [Car]: <https://github.com/rmarioo/smells-to-refactoring/blob/master/conditionals/src/main/java/it/rmarioo/smells_to_refactoring/conditionals/Car.java>
 [open closed principle]: <https://en.wikipedia.org/wiki/Open/closed_principle>
-[single resposibility principle]: <https://en.wikipedia.org/wiki/Single_responsibility_principle>
+[single responsibility principle]: <https://en.wikipedia.org/wiki/Single_responsibility_principle>
