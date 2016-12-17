@@ -1,6 +1,6 @@
 # Code smells to refactorings
 
-A list of code smells examples related refactored versions.
+A list of code smells examples and related refactored versions.
   
 The refactored version of each example is in the related branch with suffix "refactored"  
 For example the refactored version of [conditionals] is in the [conditionals-refactored] branch 
