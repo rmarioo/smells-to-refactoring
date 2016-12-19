@@ -2,18 +2,17 @@ package it.rmarioo.smells_to_refactoring.datafield;
 
 public class Player
 {
-  private final String playerName;
+  private final String name;
   private int score;
 
-  public Player(String playerName)
+  public Player(String name)
   {
-
-    this.playerName = playerName;
+    this.name = name;
   }
 
-  public String getPlayerName()
+  public String getName()
   {
-    return playerName;
+    return name;
   }
 
   public int getScore()
@@ -21,7 +20,7 @@ public class Player
     return score;
   }
 
-  void increaseScores()
+  public void increaseScores()
   {
     this.score = score +1;
   }

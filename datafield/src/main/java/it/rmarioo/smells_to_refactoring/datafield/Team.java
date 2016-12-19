@@ -36,7 +36,7 @@ public class Team
   {
     return this.players
                           .stream()
-                          .filter(p-> p.getPlayerName().equals(name))
+                          .filter(p-> p.getName().equals(name))
                           .findFirst()
                           .orElseThrow(() ->new RuntimeException("not found " + name));
   }
