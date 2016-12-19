@@ -26,15 +26,6 @@ public class Team
     this.scores[playerIndex(name)] ++;
   }
 
-  private Player findByName(String name)
-  {
-    return this.players
-                          .stream()
-                          .filter(p-> p.getPlayerName().equals(name))
-                          .findFirst()
-                          .orElseThrow(() ->new RuntimeException("not found " + name));
-  }
-
   public int scoresOf(String player)
   {
     return this.scores[playerIndex(player)];
@@ -46,6 +37,15 @@ public class Team
     for(int i = 0; i < this.scores.length; i++)
       totalScores++;
     return totalScores;
+  }
+
+  private Player findByName(String name)
+  {
+    return this.players
+                          .stream()
+                          .filter(p-> p.getPlayerName().equals(name))
+                          .findFirst()
+                          .orElseThrow(() ->new RuntimeException("not found " + name));
   }
 
   private String[] getPlayerNames()
