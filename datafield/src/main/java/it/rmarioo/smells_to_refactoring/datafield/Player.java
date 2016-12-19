@@ -21,8 +21,8 @@ public class Player
     return score;
   }
 
-  public void setScore(int score)
+  void increaseScores()
   {
-    this.score = score;
+    this.score = score +1;
   }
 }

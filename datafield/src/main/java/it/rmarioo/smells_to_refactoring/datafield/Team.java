@@ -17,7 +17,7 @@ public class Team
   public void addScoresFor(String name)
   {
     Player player = findByName(name);
-    player.setScore(player.getScore() +1);
+    player.increaseScores();
   }
 
   public int scoresOf(String player)
