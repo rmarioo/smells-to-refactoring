@@ -28,7 +28,7 @@ public class Team
 
   public int scoresOf(String player)
   {
-    return this.scores[playerIndex(player)];
+    return findByName(player).getScore();
   }
 
   public int totalScores()
