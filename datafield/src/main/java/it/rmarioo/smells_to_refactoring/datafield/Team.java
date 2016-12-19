@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Team
 {
-  private Integer[] scores;
   private List<Player> players;
 
   public Team(String[] playerNames)
@@ -13,17 +12,12 @@ public class Team
     this.players = new ArrayList<>();
     for(String playerName : playerNames)
       this.players.add(new Player(playerName));
-
-    this.scores = new Integer[playerNames.length];
-    for(int i = 0; i < playerNames.length; i++)
-      this.scores[i] = 0;
   }
 
   public void addScoresFor(String name)
   {
     Player player = findByName(name);
     player.setScore(player.getScore() +1);
-    this.scores[playerIndex(name)] ++;
   }
 
   public int scoresOf(String player)
