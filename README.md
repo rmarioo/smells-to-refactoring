@@ -16,8 +16,12 @@ Examples:
   - [Conditionals]    Conditionals checking "type" code smell
   - [Datafield]       A class (or group of classes) contains a data field. The field has its own behavior and associated data
 
+Branches with refactored versions:
+  - [conditionals-refactored]
+  - [datafield-refactored]     To be completed
 
 [conditionals]: <https://github.com/rmarioo/smells-to-refactoring/tree/master/conditionals>
 [conditionals-refactored]: <https://github.com/rmarioo/smells-to-refactoring/tree/conditional_refactored/conditionals>
 [datafield]: <https://github.com/rmarioo/smells-to-refactoring/tree/master/datafield>
+[datafield-refactored]: <https://github.com/rmarioo/smells-to-refactoring/tree/datafield_refactored>
 
