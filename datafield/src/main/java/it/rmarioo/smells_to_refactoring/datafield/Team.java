@@ -40,24 +40,4 @@ public class Team
                           .findFirst()
                           .orElseThrow(() ->new RuntimeException("not found " + name));
   }
-
-  private String[] getPlayerNames()
-  {
-   return players.stream()
-           .map(p -> p.getPlayerName())
-           .toArray(String[]::new);
-  }
-
-  private int playerIndex(String player)
-  {
-    for(int i = 0; i < player.length(); i++)
-    {
-      if (getPlayerNames()[i].equals(player))
-        return i;
-    }
-    throw new RuntimeException("player " + player + " does not exists");
-  }
-
-
-
 }
