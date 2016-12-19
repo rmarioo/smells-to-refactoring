@@ -33,10 +33,9 @@ public class Team
 
   public int totalScores()
   {
-    int totalScores =0;
-    for(int i = 0; i < this.scores.length; i++)
-      totalScores++;
-    return totalScores;
+    return  players.stream()
+                   .mapToInt(p-> p.getScore())
+                   .sum();
   }
 
   private Player findByName(String name)
