@@ -14,22 +14,25 @@ public class Team
       this.scores[i] = 0;
   }
 
-  public void increaseScoresFor(String player)
+  public void addScoresFor(String player)
   {
-    this.scores[findIndex(player)] ++;
+    this.scores[playerIndex(player)] ++;
   }
 
   public int scoresOf(String player)
   {
-    return this.scores[findIndex(player)];
+    return this.scores[playerIndex(player)];
   }
 
   public int totalScores()
   {
-    return 2;
+    int totalScores =0;
+    for(int i = 0; i < this.scores.length; i++)
+      totalScores++;
+    return totalScores;
   }
 
-  private int findIndex(String player)
+  private int playerIndex(String player)
   {
     for(int i = 0; i < player.length(); i++)
     {
