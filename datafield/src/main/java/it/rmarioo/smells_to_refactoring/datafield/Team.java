@@ -38,13 +38,15 @@ public class Team
 
   public String[] getPlayerNames()
   {
-    return playerNames;
+   return players.stream()
+           .map(p -> p.getPlayerName())
+           .toArray(String[]::new);
   }
 
   public void setPlayerNames(String[] playerNames)
   {
     this.playerNames = playerNames;
-    this.players = new ArrayList<Player>();
+    this.players = new ArrayList<>();
     for(String playerName : playerNames)
     {
       this.players.add(new Player(playerName));
