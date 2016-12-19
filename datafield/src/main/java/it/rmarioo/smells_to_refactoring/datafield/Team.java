@@ -2,15 +2,15 @@ package it.rmarioo.smells_to_refactoring.datafield;
 
 public class Team
 {
-  private String[] players;
+  private String[] playerNames;
   private Integer[] scores;
 
-  public Team(String[] players)
+  public Team(String[] playerNames)
   {
-    this.players = players;
+    this.playerNames = playerNames;
 
-    this.scores = new Integer[players.length];
-    for(int i = 0; i < players.length; i++)
+    this.scores = new Integer[playerNames.length];
+    for(int i = 0; i < playerNames.length; i++)
       this.scores[i] = 0;
   }
 
@@ -36,7 +36,7 @@ public class Team
   {
     for(int i = 0; i < player.length(); i++)
     {
-      if (players[i].equals(player))
+      if (playerNames[i].equals(player))
         return i;
     }
     throw new RuntimeException("player " + player + " does not exists");
