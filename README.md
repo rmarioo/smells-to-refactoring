@@ -14,7 +14,10 @@ You know other better ways ? Let me know!
 
 Examples:
   - [Conditionals]    Conditionals checking "type" code smell
+  - [Datafield]       A class (or group of classes) contains a data field. The field has its own behavior and associated data
+
 
 [conditionals]: <https://github.com/rmarioo/smells-to-refactoring/tree/master/conditionals>
 [conditionals-refactored]: <https://github.com/rmarioo/smells-to-refactoring/tree/conditional_refactored/conditionals>
+[datafield]: <https://github.com/rmarioo/smells-to-refactoring/tree/master/datafield>
 
