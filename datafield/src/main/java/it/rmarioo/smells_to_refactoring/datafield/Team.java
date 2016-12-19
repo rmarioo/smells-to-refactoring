@@ -19,9 +19,20 @@ public class Team
       this.scores[i] = 0;
   }
 
-  public void addScoresFor(String player)
+  public void addScoresFor(String name)
   {
-    this.scores[playerIndex(player)] ++;
+    Player player = findByName(name);
+    player.setScore(player.getScore() +1);
+    this.scores[playerIndex(name)] ++;
+  }
+
+  private Player findByName(String name)
+  {
+    return this.players
+                          .stream()
+                          .filter(p-> p.getPlayerName().equals(name))
+                          .findFirst()
+                          .orElseThrow(() ->new RuntimeException("not found " + name));
   }
 
   public int scoresOf(String player)
