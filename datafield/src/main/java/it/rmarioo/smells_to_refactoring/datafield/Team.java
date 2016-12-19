@@ -1,9 +1,13 @@
 package it.rmarioo.smells_to_refactoring.datafield;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Team
 {
   private String[] playerNames;
   private Integer[] scores;
+  private List<Player> players;
 
   public Team(String[] playerNames)
   {
@@ -40,6 +44,11 @@ public class Team
   public void setPlayerNames(String[] playerNames)
   {
     this.playerNames = playerNames;
+    this.players = new ArrayList<Player>();
+    for(String playerName : playerNames)
+    {
+      this.players.add(new Player(playerName));
+    }
   }
 
   private int playerIndex(String player)
