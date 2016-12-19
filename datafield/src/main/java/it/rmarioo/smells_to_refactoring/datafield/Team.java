@@ -7,7 +7,7 @@ public class Team
 
   public Team(String[] playerNames)
   {
-    this.playerNames = playerNames;
+    this.setPlayerNames(playerNames);
 
     this.scores = new Integer[playerNames.length];
     for(int i = 0; i < playerNames.length; i++)
@@ -32,11 +32,21 @@ public class Team
     return totalScores;
   }
 
+  public String[] getPlayerNames()
+  {
+    return playerNames;
+  }
+
+  public void setPlayerNames(String[] playerNames)
+  {
+    this.playerNames = playerNames;
+  }
+
   private int playerIndex(String player)
   {
     for(int i = 0; i < player.length(); i++)
     {
-      if (playerNames[i].equals(player))
+      if (getPlayerNames()[i].equals(player))
         return i;
     }
     throw new RuntimeException("player " + player + " does not exists");
