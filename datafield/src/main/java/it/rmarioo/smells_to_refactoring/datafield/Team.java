@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Team
 {
-  private String[] playerNames;
   private Integer[] scores;
   private List<Player> players;
 
@@ -45,7 +44,6 @@ public class Team
 
   public void setPlayerNames(String[] playerNames)
   {
-    this.playerNames = playerNames;
     this.players = new ArrayList<>();
     for(String playerName : playerNames)
     {
