@@ -10,7 +10,9 @@ public class Team
 
   public Team(String[] playerNames)
   {
-    this.setPlayerNames(playerNames);
+    this.players = new ArrayList<>();
+    for(String playerName : playerNames)
+      this.players.add(new Player(playerName));
 
     this.scores = new Integer[playerNames.length];
     for(int i = 0; i < playerNames.length; i++)
@@ -35,20 +37,11 @@ public class Team
     return totalScores;
   }
 
-  public String[] getPlayerNames()
+  private String[] getPlayerNames()
   {
    return players.stream()
            .map(p -> p.getPlayerName())
            .toArray(String[]::new);
-  }
-
-  public void setPlayerNames(String[] playerNames)
-  {
-    this.players = new ArrayList<>();
-    for(String playerName : playerNames)
-    {
-      this.players.add(new Player(playerName));
-    }
   }
 
   private int playerIndex(String player)
