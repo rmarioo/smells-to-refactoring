@@ -32,7 +32,7 @@ public class CarTest
   @Test
   public void luxuryCarRental()
   {
-    Car car = new Car("BMW", LUXURY);
+    Car car = new LuxuryCar("BMW");
     assertThat(car.amountForDays(5), is(75));
   }
 }
