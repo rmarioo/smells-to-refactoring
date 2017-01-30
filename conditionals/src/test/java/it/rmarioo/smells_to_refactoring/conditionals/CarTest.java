@@ -25,7 +25,7 @@ public class CarTest
   @Test
   public void economyCarRental()
   {
-    Car car = new Car("Ford Fiesta", ECONOMY);
+    Car car = new EconomyCar("Ford Fiesta");
     assertThat(car.amountForDays(5), is(35));
   }
 
