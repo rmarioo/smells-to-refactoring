@@ -11,14 +11,14 @@ public class CarTest
   @Test
   public void miniCarRental_lessThan_10_days()
   {
-    Car car = new Car("Hyundai i10", MINI);
+    Car car = new MiniCar("Hyundai i10");
     assertThat(car.amountForDays(5), is(20));
   }
 
   @Test
   public void miniCarRental_moreThan_10_days()
   {
-    Car car = new Car("Hyundai i10", MINI);
+    Car car = new MiniCar("Hyundai i10");
     assertThat(car.amountForDays(15), is(35));
   }
 
