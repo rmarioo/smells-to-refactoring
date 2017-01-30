@@ -4,7 +4,7 @@ public class MiniCar extends Car
 {
   public MiniCar(String name)
   {
-    super(name,MINI);
+    super(name);
   }
 
   @Override

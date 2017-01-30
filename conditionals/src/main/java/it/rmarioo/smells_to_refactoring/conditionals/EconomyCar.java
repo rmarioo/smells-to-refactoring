@@ -4,7 +4,7 @@ public class EconomyCar extends Car
 {
   public EconomyCar(String name)
   {
-    super(name,ECONOMY);
+    super(name);
   }
 
   @Override

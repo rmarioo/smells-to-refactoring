@@ -4,7 +4,7 @@ public class LuxuryCar extends Car
 {
   public LuxuryCar(String name)
   {
-    super(name,LUXURY);
+    super(name);
   }
 
   @Override
