@@ -10,11 +10,7 @@ public class MiniCar extends Car
   @Override
   public int amountForDays(int daysRented)
   {
-    int thisAmount = 0;
-        if (daysRented < 10)
-          thisAmount = 10 + (daysRented * 2);
-        else
-          thisAmount = 20 + (daysRented * 1);
-    return thisAmount;
+    return (daysRented < 10) ? 10 + (daysRented * 2)
+                             : 20 + (daysRented * 1);
   }
 }
