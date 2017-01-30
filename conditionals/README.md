@@ -10,7 +10,7 @@ The refactoring applied is ***Replacing conditionals with polimorfism*** and it 
   - “Push member down” from [Car] to its subclasses
   - Removing the unused code in each subclass of [Car]
 
-[conditionals-refactored]: <https://github.com/rmarioo/smells-to-refactoring/tree/conditional_refactored/conditionals>
+[conditionals_refactored]: <https://github.com/rmarioo/smells-to-refactoring/tree/conditional_refactored/conditionals>
 [Car]: <https://github.com/rmarioo/smells-to-refactoring/blob/master/conditionals/src/main/java/it/rmarioo/smells_to_refactoring/conditionals/Car.java>
 [open closed principle]: <https://en.wikipedia.org/wiki/Open/closed_principle>
 [single responsibility principle]: <https://en.wikipedia.org/wiki/Single_responsibility_principle>
